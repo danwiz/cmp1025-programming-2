@@ -1,0 +1,6 @@
+identifier,type,module,artifact,evidence,status
+ADR-001,architecture,Week 12,Java 21 Maven baseline,pom.xml,Implemented
+ADR-002,quality,Week 9,JUnit/AssertJ/Mockito/JaCoCo,pom.xml and tests,Implemented
+DGM-ARC-001,diagram,Week 12,Layered architecture,docs/diagrams/DGM-ARC-001-layered-architecture.mmd,Implemented
+DGM-UML-003,diagram,Week 11,Calculate fee sequence,docs/diagrams/DGM-UML-003-sequence-calculate-fee.puml,Implemented
+REL-0.9.0,release,Week 13,Executable baseline,release/RELEASE-MANIFEST.md,Ready for CI

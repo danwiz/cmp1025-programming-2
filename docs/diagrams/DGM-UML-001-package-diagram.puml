@@ -1,0 +1,10 @@
+@startuml
+package presentation
+package application
+package domain
+package infrastructure
+presentation ..> application
+application ..> domain
+infrastructure ..> application
+infrastructure ..> domain
+@enduml

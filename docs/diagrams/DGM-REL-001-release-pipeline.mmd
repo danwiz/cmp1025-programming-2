@@ -1,0 +1,9 @@
+flowchart LR
+  C[Commit] --> PR[Pull Request]
+  PR --> F[Format/Lint]
+  F --> T[Tests + ArchUnit]
+  T --> S[CodeQL + Dependency Review]
+  S --> B[Build]
+  B --> O[SBOM + Checksums]
+  O --> P[Provenance]
+  P --> R[Release 0.9.0]

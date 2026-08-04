@@ -1,0 +1,12 @@
+@startuml
+actor User
+participant ConsoleApplication
+participant CalculateFeeUseCase
+participant FeePolicy
+User -> ConsoleApplication: amount
+ConsoleApplication -> CalculateFeeUseCase: execute(amount)
+CalculateFeeUseCase -> FeePolicy: calculate(amount)
+FeePolicy --> CalculateFeeUseCase: fee
+CalculateFeeUseCase --> ConsoleApplication: fee
+ConsoleApplication --> User: formatted fee
+@enduml

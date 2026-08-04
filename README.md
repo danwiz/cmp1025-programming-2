@@ -21,15 +21,9 @@ mvn -B verify
 ## Run
 
 ```bash
-java -cp target/classes com.wisdom.cmp1025.presentation.ConsoleApplication
+java -cp target/classes com.wisdom.cmp1025.presentation.ConsoleApplication 100.00
 ```
 
-Expected output:
-
-```text
-2.50
-```
-
-## Governance
+Expected output: `2.50`
 
 Architecture and tooling decisions are governed by ADR-001 through ADR-008. Release `0.9.0` is the first executable instructional baseline.
