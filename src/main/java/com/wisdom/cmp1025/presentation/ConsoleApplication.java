@@ -13,8 +13,7 @@ public final class ConsoleApplication {
       System.exit(2);
     }
     try {
-      var fee =
-          new CalculateFeeUseCase(new StandardFeePolicy()).execute(new BigDecimal(args[0]));
+      var fee = new CalculateFeeUseCase(new StandardFeePolicy()).execute(new BigDecimal(args[0]));
       System.out.println(fee.toPlainString());
     } catch (RuntimeException ex) {
       System.err.println("Invalid amount: " + ex.getMessage());
